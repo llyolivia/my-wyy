@@ -4,4 +4,4 @@ import ReactDom from 'react-dom'; //创建好的组件、虚拟dom放到页面�
 const htmlData = React.createElement('div',{id:'mydiv', title:'我的div'},'这是一个div');
 const appdiv = React.createElement('div', null, '这是一个app',htmlData)
 
-ReactDom.render(root);
+ReactDom.render(appdiv,document.getElementById('app'));

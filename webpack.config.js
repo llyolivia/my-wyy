@@ -11,5 +11,15 @@ module.exports={
     mode:'development', //开发环境
     plugins:[
         htmlPlugin
-    ]
+    ],
+    // 所有第三方模块规则
+    module: {
+        rules:[
+            {
+                test:/\.js$/,
+                use:'babel-loader',
+                exclude:/node_modules/
+              },
+          ]
+    }
 }
